@@ -1,0 +1,18 @@
+import java.util.Scanner;
+class Hypotenuse{
+    public static void main(String[]args){
+        Scanner sc=new Scanner(System.in);
+        //hypothenis of right angle triangle is c=a2+b2
+        double a,b,c;
+        System.out.print("Enter lenght of side A: ");
+        a=sc.nextDouble();
+        System.out.print("Enter lenth of side B: ");
+        b=sc.nextDouble();
+        //using Math operator to do squares 
+        c=Math.sqrt(Math.pow(a,2)+Math.pow(b,2));
+        System.out.println("The Hypotenuse of side C is: "+ c);
+        
+        
+       sc.close(); 
+    }
+}
