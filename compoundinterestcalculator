@@ -1,0 +1,24 @@
+import java.util.Scanner;
+class Interest{
+    public static void main(String[]args){
+        Scanner sc =new Scanner(System.in);
+        double principle;
+        double rate;
+        double timesCompounded;
+        double years;
+        double amount;
+        System.out.print("Enter principle amount: ");
+        principle = sc.nextDouble();
+        System.out.print("Enter the interest rate: ");
+        rate = sc.nextDouble()/100;
+        System.out.print("Enter no.of times compounded: ");
+        timesCompounded=sc.nextInt();
+        System.out.print("Enter no.of years : ");
+        years = sc.nextDouble();
+        amount = principle*Math.pow(1+rate/timesCompounded,timesCompounded*years);
+        
+         System.out.println(" The total amount for " + years+ "is :" + amount);
+        sc.close();
+        
+    }
+}
