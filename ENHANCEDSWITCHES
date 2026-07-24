@@ -1,0 +1,25 @@
+import java.util.Scanner;
+class Main{
+    public static void main(String[]args){
+        Scanner sc = new Scanner(System.in);
+        String day;
+        System.out.print("enter the day : ");
+        day = sc.nextLine().toLowerCase();
+        //FOR MULTIPLE CASES WE CAN USE {} 
+switch(day){
+            case "monday","tuesday","wednesday","thursday","friday" ->{
+                System.out.print("It's weekday ,");
+                System.out.print("Go to work! ");
+                
+            }
+            case "saturday","sunday"->{
+                System.out.print("It's weekend, ");
+                System.out.print("HUURAHH...LETS BLAST OOUR DAY!! ");
+                
+            }
+            
+    default ->System.out.print("Invalid choice");
+        }
+         sc.close();
+}
+}
