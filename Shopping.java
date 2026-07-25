@@ -10,7 +10,7 @@ public static void main(String[] args){
 
     System.out.print("What wouold you like to buy: ");
     item = sc.nextLine();
-    System.out.print("How many items would you buy: ");
+    System.out.print("Quantity( 1 or more): ");
     quantity = sc.nextInt();
     System.out.println("price of one  item is : " + price +currency);
     
